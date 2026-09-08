@@ -67,3 +67,8 @@ wallet(10)(10)(5)(0)() // spend money from balance
 - Net and system administration
 - [HTML course](https://code-basics.com/ru/languages/html)
 - [CSS course](https://code-basics.com/ru/languages/css)
+
+## Languages
+
+- **Russian** - native speaker.
+- **English** - A2 (I learn using YouTube videos and Anki flashcards.)
