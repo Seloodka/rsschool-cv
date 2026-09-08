@@ -31,3 +31,27 @@ Intern JavaScript Developer. Actively developing my knowledge and skills in web 
 - DevTools
 - Pixel-Perfect layout
 - Responsive layout
+
+## Code snippets
+
+```
+function createBalance (amount) {
+  let balance = amount;
+
+  return function deductFromBalance (spend) {
+    if (balance <= 0 || spend > balance) {
+      throw new Error('Деньги кончились')
+    }
+    if(spend === undefined) {
+      return balance;
+    }
+    balance -= spend;
+
+    return deductFromBalance;
+  };
+};
+
+let wallet = createBalance(5000);
+
+wallet(10)(10)(5)(0)() // spend money from balance
+```
