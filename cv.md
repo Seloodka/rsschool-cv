@@ -61,3 +61,9 @@ wallet(10)(10)(5)(0)() // spend money from balance
 - ### [Christmas Shop](https://seloodka.github.io/Christmas-Shop/)
   - Adaptive layout, basic JS, import data from JSON.
   - [Source code](https://github.com/Seloodka/Christmas-Shop/tree/christmas-shop-part3)
+
+## Education
+
+- Net and system administration
+- [HTML course](https://code-basics.com/ru/languages/html)
+- [CSS course](https://code-basics.com/ru/languages/css)
