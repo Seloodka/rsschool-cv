@@ -13,3 +13,21 @@
 ## About me
 
 Intern JavaScript Developer. Actively developing my knowledge and skills in web development. Currently studying JavaScript and related technologies. Throughout my learning process, I focus on applying the knowledge I gain in practice and use various techniques to develop a deeper understanding and better retention of the material.
+
+## Skills
+
+### Technologies
+
+- HTML
+- CSS/SASS
+- JavaScript (Basic)
+- Git
+
+### Development instruments
+
+- VS Code
+- Figma
+- Generative AI
+- DevTools
+- Pixel-Perfect layout
+- Responsive layout
