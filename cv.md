@@ -55,3 +55,9 @@ let wallet = createBalance(5000);
 
 wallet(10)(10)(5)(0)() // spend money from balance
 ```
+
+## Experience
+
+- ### [Christmas Shop](https://seloodka.github.io/Christmas-Shop/)
+  - Adaptive layout, basic JS, import data from JSON.
+  - [Source code](https://github.com/Seloodka/Christmas-Shop/tree/christmas-shop-part3)
