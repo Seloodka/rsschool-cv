@@ -6,4 +6,4 @@
 
 ### https://seloodka.github.io/rsschool-cv/cv
 
-- Ссылка на резюме в markdown формате.
+- Ссылка на CV в markdown формате.
