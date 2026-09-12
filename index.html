@@ -114,6 +114,39 @@
           </div>
         </section>
       </section>
+
+      <section class="section-wrapper" id="code">
+        <header class="section-header">
+          <h2 class="section-header__name">Code snippets</h2>
+        </header>
+
+        <div class="code-snippets">
+          <pre class="code-snippets__snippet">
+            <code>
+function createBalance (amount) {
+  let balance = amount;
+
+  return function deductFromBalance (spend) {
+    if (balance &lt;= 0 || spend &gt; balance) {
+      throw new Error('Деньги кончились')
+    }
+    if(spend === undefined) {
+      return balance;
+    }
+    balance -= spend;
+
+    return deductFromBalance;
+  };
+};
+
+let wallet = createBalance(5000);
+
+wallet(10)(10)(5)(0)() // spend money from balance
+            </code>
+          </pre>
+        </div>
+      </section>
+    </main>
   </div>
 </body>
 
