@@ -3,3 +3,16 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.page-layout {
+  display: flex;
+  justify-content: center;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  max-width: 1440px;
+}
