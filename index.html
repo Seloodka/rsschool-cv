@@ -41,42 +41,46 @@
     </header>
 
     <main>
-      <section class="contact-section" id="contacts">
+      <section class="section-wrapper" id="contacts">
         <header class="section-header">
           <h2 class="section-header__name">Contacts</h2>
         </header>
-
-        <address class="contacts-wrapper">
-          <ul class="contacts-wrapper__list">
-            <li class="contacts-wrapper__item" title="Location">
-              <a href="https://maps.app.goo.gl/MpAqM9YdRTGTmLKX7">Moscow, Russia</a>
-            </li>
-            <li class="contacts-wrapper__item" title="Phone number">
-              <a href="tel:+79999999999">+8 (999) 999-99-99</a>
-            </li>
-            <li class="contacts-wrapper__item" title="Email">
-              <a href="mailto:seloodka@gmail.com">seloodka@gmail.com</a>
-            </li>
-            <li class="contacts-wrapper__item" title="Github">
-              <a href="https://github.com/Seloodka">Seloodka</a>
-            </li>
-            <li class="contacts-wrapper__item" title="Discord">
-              <span>@seloodka_40121</span>
-            </li>
-          </ul>
-        </address>
+        <div class="section-container">
+          <address class="section-wrapper">
+            <ul class="contacts-wrapper__list">
+              <li class="contacts-wrapper__item" title="Location">
+                <a href="https://maps.app.goo.gl/MpAqM9YdRTGTmLKX7">Moscow, Russia</a>
+              </li>
+              <li class="contacts-wrapper__item" title="Phone number">
+                <a href="tel:+79999999999">+8 (999) 999-99-99</a>
+              </li>
+              <li class="contacts-wrapper__item" title="Email">
+                <a href="mailto:seloodka@gmail.com">seloodka@gmail.com</a>
+              </li>
+              <li class="contacts-wrapper__item" title="Github">
+                <a href="https://github.com/Seloodka">Seloodka</a>
+              </li>
+              <li class="contacts-wrapper__item" title="Discord">
+                <span>@seloodka_40121</span>
+              </li>
+            </ul>
+          </address>
+        </div>
       </section>
 
-      <section class="about-section" id="about">
+      <section class="section-wrapper" id="about">
         <header class="section-header">
           <h2 class="section-header__name">About me</h2>
         </header>
-        <p>
-          Intern JavaScript Developer. Actively developing my knowledge and skills in web development. Currently
-          studying JavaScript and related technologies. Throughout my learning process, I focus on applying the
-          knowledge I gain in practice and use various techniques to develop a deeper understanding and better retention
-          of the material.
-        </p>
+        <div class="section-container">
+          <p>
+            Intern JavaScript Developer. Actively developing my knowledge and skills in web development. Currently
+            studying JavaScript and related technologies. Throughout my learning process, I focus on applying the
+            knowledge I gain in practice and use various techniques to develop a deeper understanding and better
+            retention
+            of the material.
+          </p>
+        </div>
       </section>
 
       <section class="section-wrapper" id="skills">
@@ -84,35 +88,37 @@
           <h2 class="section-header__name">Skills</h2>
         </header>
 
-        <section class="skills-category">
-          <header class="category-header">
-            <h3 class="category-header__name">Technologies</h3>
-          </header>
-          <div class="category-content">
-            <ul class="category-content__list">
-              <li class="category-content__item">HTML</li>
-              <li class="category-content__item">CSS/SASS</li>
-              <li class="category-content__item">JavaScript</li>
-              <li class="category-content__item">Git</li>
-            </ul>
-          </div>
-        </section>
+        <div class="section-container">
+          <section class="skills-category">
+            <header class="category-header">
+              <h3 class="category-header__name">Technologies</h3>
+            </header>
+            <div class="category-content">
+              <ul class="category-content__list">
+                <li class="category-content__item">HTML</li>
+                <li class="category-content__item">CSS/SASS</li>
+                <li class="category-content__item">JavaScript</li>
+                <li class="category-content__item">Git</li>
+              </ul>
+            </div>
+          </section>
 
-        <section class="skills-category">
-          <header class="category-header">
-            <h3 class="category-header__name">Development instruments</h3>
-          </header>
-          <div class="category-content">
-            <ul class="category-content__list">
-              <li class="category-content__item">VS Code</li>
-              <li class="category-content__item">Figma</li>
-              <li class="category-content__item">Generative AI</li>
-              <li class="category-content__item">DevTools</li>
-              <li class="category-content__item">Pixel-Perfect layout</li>
-              <li class="category-content__item">Responsive layout</li>
-            </ul>
-          </div>
-        </section>
+          <section class="skills-category">
+            <header class="category-header">
+              <h3 class="category-header__name">Development instruments</h3>
+            </header>
+            <div class="category-content">
+              <ul class="category-content__list">
+                <li class="category-content__item">VS Code</li>
+                <li class="category-content__item">Figma</li>
+                <li class="category-content__item">Generative AI</li>
+                <li class="category-content__item">DevTools</li>
+                <li class="category-content__item">Pixel-Perfect layout</li>
+                <li class="category-content__item">Responsive layout</li>
+              </ul>
+            </div>
+          </section>
+        </div>
       </section>
 
       <section class="section-wrapper" id="code">
@@ -120,8 +126,8 @@
           <h2 class="section-header__name">Code snippets</h2>
         </header>
 
-        <div class="code-snippets">
-          <pre class="code-snippets__snippet">
+        <div class="section-container">
+          <pre class="code-snippet">
             <code>
 function createBalance (amount) {
   let balance = amount;
@@ -177,6 +183,7 @@ wallet(10)(10)(5)(0)() // spend money from balance
         <header class="section-header">
           <h2 class="section-header__name">Education</h2>
         </header>
+
         <div class="section-container">
           <ul>
             <li>Net and system administration</li>
@@ -190,6 +197,7 @@ wallet(10)(10)(5)(0)() // spend money from balance
         <header class="section-header">
           <h2 class="section-header__name">Languages</h2>
         </header>
+
         <div class="section-container">
           <section class="language-wrapper">
             <h3 class="language-wrapper__name">Russian</h3>
