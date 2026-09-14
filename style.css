@@ -145,3 +145,7 @@
   width: 64px;
   height: 64px;
 }
+
+.section-container__text {
+  max-width: 800px;
+}
