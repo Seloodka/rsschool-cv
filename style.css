@@ -268,7 +268,6 @@
 
 .language-card {
   display: flex;
-  gap: 10px;
   border: var(--border-width-smaller) solid var(--link-color);
   border-radius: 5px;
 }
