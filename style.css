@@ -1,6 +1,7 @@
 :root {
   --main-color: #ff8040;
   --link-color: #512600;
+  --tag-color: #ff80404b;
 
   --border-width: 4px;
   --border-width-smaller: 3px;
@@ -189,6 +190,6 @@
 
 .category-content__item {
   padding: 5px;
-  background-color: #c0c0c0;
+  background-color: var(--tag-color);
   border-radius: 10px;
 }
