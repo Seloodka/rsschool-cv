@@ -58,7 +58,7 @@
 
 .header-menu__item > a {
   text-decoration: none;
-  color: #000000;
+  color: var(--link-color);
 }
 
 /* page content */
@@ -103,7 +103,7 @@
   justify-content: center;
   padding: 10px;
 
-  border-bottom: 3px solid var(--main-color);
+  border-bottom: var(--border-width-smaller) solid var(--main-color);
 }
 
 .section-container {
