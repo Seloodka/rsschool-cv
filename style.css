@@ -261,6 +261,25 @@
   border-radius: 5px;
 }
 
+.education-list {
+  display: flex;
+  gap: 20px;
+
+  list-style: none;
+}
+
+.education-list__item {
+  padding: 10px;
+
+  border: var(--border-width-smaller) solid var(--link-color);
+  border-radius: 5px;
+}
+
+.education-list__item > a {
+  text-decoration: none;
+  color: var(--link-color);
+}
+
 .languages-wrapper {
   display: flex;
   gap: 20px;
