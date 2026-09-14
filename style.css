@@ -54,7 +54,7 @@
 
 .header-menu__list {
   display: flex;
-  gap: 10px;
+  gap: 20px;
 
   list-style: none;
 }
@@ -64,6 +64,13 @@
   color: var(--link-color);
 }
 
+.header-menu__item:not(:last-child)::after {
+  position: relative;
+  left: 10px;
+
+  border-right: 2px solid #000000;
+  content: "";
+}
 /* page content */
 
 .profile-wrapper {
