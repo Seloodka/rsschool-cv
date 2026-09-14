@@ -10,6 +10,8 @@
   box-sizing: border-box;
 }
 
+/* page layout */
+
 .page-layout {
   display: flex;
   justify-content: center;
@@ -30,6 +32,8 @@
   align-items: center;
   gap: 20px;
 }
+
+/* page header */
 
 .page-header {
   display: flex;
@@ -53,3 +57,5 @@
   text-decoration: none;
   color: #000000;
 }
+
+/* page content */
