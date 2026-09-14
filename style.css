@@ -149,3 +149,46 @@
 .section-container__text {
   max-width: 800px;
 }
+
+.skills-categories {
+  display: flex;
+  flex-direction: row wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.skills-category {
+  display: flex;
+  flex-direction: column;
+
+  border: var(--border-width-smaller) solid var(--link-color);
+  border-radius: 5px;
+}
+
+.category-header {
+  display: flex;
+  justify-content: center;
+
+  padding: 10px;
+  border-bottom: var(--border-width-smaller) solid var(--link-color);
+}
+
+.category-content {
+  padding: 10px;
+}
+
+.category-content__list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  list-style: none;
+}
+
+.category-content__item {
+  padding: 5px;
+  background-color: #c0c0c0;
+  border-radius: 10px;
+}
