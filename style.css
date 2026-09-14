@@ -16,3 +16,10 @@
   align-items: center;
   max-width: 1440px;
 }
+
+.page-content {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 20px;
+}
