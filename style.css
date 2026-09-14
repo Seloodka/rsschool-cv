@@ -261,6 +261,29 @@
   border-radius: 5px;
 }
 
+.languages-wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.language-card {
+  display: flex;
+  gap: 10px;
+  border: var(--border-width-smaller) solid var(--link-color);
+  border-radius: 5px;
+}
+
+.language-card__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5px 10px;
+}
+
+.language-card__column:first-child {
+  border-right: var(--border-width-smaller) solid var(--link-color);
+}
+
 /* page footer */
 
 .page-footer {
