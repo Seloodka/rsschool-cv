@@ -1,6 +1,9 @@
 :root {
   --main-color: #ff8040;
+  --link-color: #512600;
+
   --border-width: 4px;
+  --border-width-smaller: 3px;
   --radius: 10px;
 }
 
@@ -107,4 +110,36 @@
   display: flex;
   justify-content: center;
   padding: 20px 10px;
+}
+
+.contacts-wrapper__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  list-style: none;
+}
+
+.contacts-wrapper__item {
+  display: flex;
+}
+
+.contacts-wrapper__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+
+  text-decoration: none;
+  color: var(--link-color);
+
+  border: var(--border-width-smaller) solid var(--link-color);
+  border-radius: 5px;
+}
+
+.contacts-wrapper__link > img {
+  width: 64px;
+  height: 100%;
+  object-fit: contain;
 }
