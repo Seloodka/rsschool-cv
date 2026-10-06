@@ -1,0 +1,473 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+:root {
+  --main-color: #ff8040;
+  --link-color: #512600;
+  --tag-color: #ff80404b;
+
+  --border-width: 4px;
+  --border-width-smaller: 3px;
+  --radius: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* page layout */
+
+.page-layout {
+  display: flex;
+  justify-content: center;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 20px;
+  max-width: 1440px;
+  padding: 0 20px;
+}
+
+.page-content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* fonts */
+
+.page-wrapper {
+  font-family: "Montserrat", "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+.profile-wrapper__name,
+.section-header__name {
+  font-family: "Montserrat Alternates", "Roboto Slab", sans-serif;
+}
+
+.code-snippet > code {
+  font-family: "Roboto Mono", monospace;
+  font-size: 18px;
+}
+
+.profile-wrapper__name {
+  font-size: 40px;
+  font-weight: bolder;
+  line-height: 1.3;
+}
+
+.section-header__name {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.category-header__name,
+.project-header__name,
+.language-card__name {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.section-container__text {
+  font-size: 20px;
+  line-height: 1.35;
+}
+
+.language-card__grade,
+.language-card__about,
+.education-list__item {
+  font-size: 18px;
+  line-height: 1.3;
+}
+
+/* page header */
+
+.page-header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 5px;
+  padding: 20px;
+
+  border: var(--border-width) solid var(--main-color);
+  border-radius: var(--radius);
+}
+
+.header-menu__list {
+  display: flex;
+  gap: 20px;
+
+  list-style: none;
+}
+
+.header-menu__item > a {
+  text-decoration: none;
+  color: var(--link-color);
+}
+
+.header-menu__item:not(:last-child)::after {
+  position: relative;
+  left: 10px;
+
+  border-right: 2px solid #000000;
+  content: "";
+}
+/* page content */
+
+.profile-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+  width: 100%;
+  height: 80svh;
+  padding: 20px;
+
+  border: var(--border-width) solid var(--main-color);
+  border-radius: var(--radius);
+}
+
+.profile-wrapper__image {
+  max-height: 256px;
+  max-width: 256px;
+
+  clip-path: circle(50%);
+}
+
+.profile-wrapper__image > img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.section-wrapper {
+  width: 100%;
+
+  border: var(--border-width) solid var(--main-color);
+  border-radius: var(--radius);
+}
+
+.section-header {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+
+  border-bottom: var(--border-width-smaller) solid var(--main-color);
+}
+
+.section-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px 10px;
+}
+
+.contacts-wrapper__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+
+  list-style: none;
+}
+
+.contacts-wrapper__item {
+  display: flex;
+}
+
+.contacts-wrapper__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100svw;
+  max-width: 300px;
+  padding: 20px;
+
+  text-decoration: none;
+  color: var(--link-color);
+
+  border: var(--border-width-smaller) solid var(--link-color);
+  border-radius: 5px;
+}
+
+.contacts-wrapper__link > img {
+  width: 64px;
+  height: 64px;
+}
+
+.section-container__text {
+  max-width: 800px;
+}
+
+.skills-categories {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.skills-category {
+  display: flex;
+  flex-direction: column;
+
+  border: var(--border-width-smaller) solid var(--link-color);
+  border-radius: 5px;
+}
+
+.category-header {
+  display: flex;
+  justify-content: center;
+
+  padding: 10px;
+  border-bottom: var(--border-width-smaller) solid var(--link-color);
+}
+
+.category-content {
+  padding: 10px;
+}
+
+.category-content__list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  list-style: none;
+}
+
+.category-content__item {
+  padding: 5px;
+  background-color: var(--tag-color);
+  border-radius: 10px;
+}
+
+.project-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  max-width: 300px;
+
+  border: var(--border-width-smaller) solid var(--link-color);
+  border-radius: 5px;
+}
+
+.project-header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 10px;
+
+  border-bottom: var(--border-width-smaller) solid var(--link-color);
+}
+
+.project-info__tag-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 10px;
+
+  list-style: none;
+}
+
+.project-info__tag {
+  padding: 5px;
+  background-color: var(--tag-color);
+  border-radius: 10px;
+}
+
+.project-footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 10px;
+
+  border-top: var(--border-width-smaller) solid var(--link-color);
+}
+
+.project-footer__list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 5px;
+  gap: 20px;
+
+  list-style: none;
+}
+
+.project-footer__link {
+  padding: 5px;
+  width: 100%;
+
+  text-decoration: none;
+  color: var(--link-color);
+
+  border: var(--border-width-smaller) solid var(--link-color);
+  border-radius: 5px;
+}
+
+.education-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 20px;
+
+  list-style: none;
+}
+
+.education-list__item {
+  padding: 10px;
+
+  border: var(--border-width-smaller) solid var(--link-color);
+  border-radius: 5px;
+}
+
+.education-list__item > a {
+  text-decoration: none;
+  color: var(--link-color);
+}
+
+.languages-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.language-card {
+  display: flex;
+  border: var(--border-width-smaller) solid var(--link-color);
+  border-radius: 5px;
+}
+
+.language-card__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5px 10px;
+}
+
+.language-card__column:first-child {
+  border-right: var(--border-width-smaller) solid var(--link-color);
+}
+
+/* page footer */
+
+.page-footer {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 30svh;
+  min-height: 250px;
+  margin-bottom: 5px;
+  padding: 20px;
+
+  border: var(--border-width) solid var(--main-color);
+  border-radius: var(--radius);
+}
+
+.footer-links__list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
+  list-style: none;
+}
+
+.footer-links__item {
+  max-width: 200px;
+}
+
+.footer-links__item:first-child {
+  max-width: 100px;
+}
+
+.footer-links__link > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.footer-wrapper__creation-date {
+  position: relative;
+  bottom: -50px;
+}
+
+@media only screen and (max-width: 768px) {
+  .page-wrapper {
+    padding: 0 5px;
+  }
+
+  .header-menu__list {
+    flex-wrap: wrap;
+  }
+
+  .section-container__text {
+    font-size: 16px;
+    line-height: 1.3;
+  }
+
+  .section-container {
+    padding: 10px 5px;
+  }
+
+  .code-snippet {
+    font-size: 14px;
+  }
+
+  .footer-links__item {
+    max-width: 150px;
+  }
+
+  .footer-links__item:first-child {
+    max-width: 50px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .page-wrapper {
+    font-size: 14px;
+  }
+  .profile-wrapper__name {
+    font-size: 34px;
+  }
+
+  .section-header__name {
+    font-size: 26px;
+  }
+
+  .language-card__grade,
+  .language-card__about,
+  .education-list__item {
+    font-size: 14px;
+  }
+
+  .category-header__name,
+  .project-header__name,
+  .language-card__name {
+    font-size: 18px;
+  }
+  .code-snippet > code {
+    font-size: 10px;
+  }
+
+  .section-container {
+    padding: 10px 3px;
+  }
+}
